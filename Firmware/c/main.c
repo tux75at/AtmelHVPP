@@ -150,19 +150,19 @@ int main(void) {
 
     	twi_display_clear();
     	twi_display_write_text(0x00, 0x00, 0x07, "Sig: 0x" );
-        twi_display_write_text_hex(0x00, 0x07, signature_byte_0);
-        twi_display_write_text_hex(0x00, 0x09, signature_byte_1);
-        twi_display_write_text_hex(0x00, 0x0b, signature_byte_2);
+        twi_display_write_hex(0x00, 0x07, signature_byte_0);
+        twi_display_write_hex(0x00, 0x09, signature_byte_1);
+        twi_display_write_hex(0x00, 0x0b, signature_byte_2);
 
     	rv = hvpp_read_fuses();
 	    twi_display_write_text(0x01, 0x00, 0x02, "h:" );
-        twi_display_write_text_hex(0x01, 0x02, fuse_byte_high);
+        twi_display_write_hex(0x01, 0x02, fuse_byte_high);
 	    twi_display_write_text(0x01, 0x04, 0x02, "l:" );
-        twi_display_write_text_hex(0x01, 0x06, fuse_byte_low);
+        twi_display_write_hex(0x01, 0x06, fuse_byte_low);
 	    twi_display_write_text(0x01, 0x08, 0x02, "e:" );
-        twi_display_write_text_hex(0x01, 0x0A, fuse_byte_ext);
+        twi_display_write_hex(0x01, 0x0A, fuse_byte_ext);
     	twi_display_write_text(0x01, 0x0C, 0x02, "l:" );
-        twi_display_write_text_hex(0x01, 0x0E, fuse_byte_lock);
+        twi_display_write_hex(0x01, 0x0E, fuse_byte_lock);
 
         // programming fuses
         _delay_ms(5000);
