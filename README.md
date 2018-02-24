@@ -24,7 +24,9 @@ If you have only 3 defect chips like me, then it might not be worth fixing them,
 * avr tools (apt-get install gcc-avr avr-libc)
 
 ## How to compile and flash
-The makfile has the target "programm" which compiles and flashes using the settings in the Makefile. Make sure to change the device if you use a different Arduino board, also make sure to change the IO settings in the main.c file at the beginning. If you flash with this Makefile, the bootloader will be removed. You can fix the bootloader with the Arduino IDE and the Atmel ISP device.
+The makfile has the target "program" which compiles and flashes using the settings in the Makefile. 
+If you only want to build just type "make" in a terminal.
+Make sure to change the device if you use a different Arduino board, also make sure to change the IO settings in the main.c file at the beginning. If you flash with this Makefile, the bootloader will be removed. You can fix the bootloader with the Arduino IDE and the Atmel ISP device.
 
 ## disclaimers
 This code is provided as-is, with NO guarantees or liabilities.
