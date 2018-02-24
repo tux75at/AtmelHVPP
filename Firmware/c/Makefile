@@ -78,7 +78,7 @@ OBJDIR = obj
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c buttons.c twi.c twi_display.c
+SRC = $(TARGET).c twi.c twi_display.c
 
 
 # List C++ source files here. (C dependencies are automatically generated.)
