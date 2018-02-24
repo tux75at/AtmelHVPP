@@ -59,6 +59,7 @@ uint8_t twi_display_set_backlight (uint8_t on);
 uint8_t twi_display_set_4bit_mode (void);
 uint8_t twi_display_write_char (char c);
 uint8_t twi_display_write_text (uint8_t line, uint8_t position, uint8_t length, char* text);
+uint8_t twi_display_write_hex (uint8_t line, uint8_t position, char c);
 uint8_t twi_display_set_cursor_position (uint8_t line, uint8_t position);
 uint8_t twi_display_write_text_hex (uint8_t line, uint8_t position, char c);
 
